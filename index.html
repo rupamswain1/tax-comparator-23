@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CED - Tax Comparator-23</title>
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <h1>< CED /></h1>
+    <h2>Coding Every Day</h2>
+    <h1>Tax Comparator - updated with the 2023 Budget</h1>
+    <div id="errors"></div>
+    <div>
+      <div>
+        <label>Annual Salary</label>
+      </div>
+      <input id="salary" value="1200000" name="Annual Salary" />
+      <h2>Deductions</h2>
+      <div>
+        <label>Standard Deduction</label>
+      </div>
+      <input
+        id="stdDeduc"
+        class="deductions"
+        value="50000"
+        name="Standard Deduction"
+        disabled
+      />
+      <div>
+        <label>80C</label>
+      </div>
+      <input
+        class="deductions"
+        id="80c"
+        value="0"
+        name="80C"
+        type="number"
+        min="0"
+        max="150000"
+      />
+      <div>
+        <label>NPS 80CCD(1B)</label>
+      </div>
+      <input
+        class="deductions"
+        id="nps80ccd1b"
+        value="0"
+        name="NPS 80CCD(1B)"
+        type="number"
+        min="0"
+        max="50000"
+      />
+      <div>
+        <label>NPS Employer</label>
+      </div>
+      <input
+        class="deductions"
+        id="npsEmployer"
+        value="0"
+        name="NPS Employer"
+        type="number"
+        min="0"
+      />
+      <div>
+        <label>HRA</label>
+      </div>
+      <input
+        class="deductions"
+        id="hra"
+        value="0"
+        name="HRA"
+        type="number"
+        min="0"
+      />
+      <div>
+        <label>80D</label>
+      </div>
+      <input
+        class="deductions"
+        id="80d"
+        value="0"
+        name="80D"
+        type="number"
+        min="0"
+      />
+      <div>
+        <label>Home Loan Interest</label>
+      </div>
+      <input
+        class="deductions"
+        id="homeLoan"
+        value="0"
+        name="Home Loan Interest"
+        type="number"
+        min="0"
+        max="200000"
+      />
+      <div>
+        <label
+          >Other Deductions (LTA, Fuel Exemtion, phone bill exemption, 80EEB
+          etc)</label
+        >
+      </div>
+      <input
+        class="deductions"
+        id="otherDed"
+        value="0"
+        name="Other Deduction"
+        type="number"
+        min="0"
+      />
+      <div>
+        <button id="calculateBtn">Calculate</button>
+      </div>
+    </div>
+    <div id="results"></div>
+  </body>
+</html>
