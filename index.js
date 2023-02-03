@@ -87,8 +87,9 @@ function newtaxCalculator(salary) {
   if (salary <= 700000) {
     return 0;
   } else {
-    const standardDeduction = 0; //to be updated later
-    salary = salary > 1550000 ? (salary -= standardDeduction) : salary;
+    const standardDeduction = 50000; //to be updated later
+    // salary = salary > 1550000 ? (salary -= standardDeduction) : salary;
+    salary = salary - standardDeduction;
     const slabAmount = 300000;
     let salarySlab = parseInt(salary) / slabAmount;
 
